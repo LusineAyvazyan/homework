@@ -1,0 +1,89 @@
+!DOCTYPE html>
+ <html>
+  <head>
+  	<title>rectagleA</title>
+  	<script>
+  			for (i = 0; i < 10; i++) {
+  				for (j = 0; j <= i; j++) {
+  			document.write("*");
+  	}
+  document.write("<br>")
+} 		
+
+       </script>
+  </head>
+  	<body>
+  		
+  </body>
+ </html> 	
+
+
+
+
+<html>
+  <head>
+    <title>rectagleB</title>
+    <script>
+        for (i = 0; i < 10; i++) {
+          for (j = 1; j <= 10-i; j++) {
+        document.write("*");
+    }
+  document.write("<br>")
+}       
+       </script>
+  </head>
+    <body>
+      
+    </body>
+  
+ </html>  
+
+
+
+<html>
+  <head>
+    <title>rectagleC</title>
+    <script>
+        for (i = 0; i < 10; i++) {
+          for (j = 0; j < i; j++) {
+        document.write("&nbsp&nbsp");
+    }
+    for (j = i; j < 10; j++) {
+             document.write("*");
+  }    
+         document.write("<br>")
+   }   
+       </script>
+  </head>
+    <body>
+      
+    </body>
+  
+ </html>  
+
+
+
+
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>rectagleD</title>
+    <script>
+        for (i = 1; i <= 10; i++) {
+          for (j = 1; j <= 10-i; j++) {
+             document.write("&nbsp&nbsp");
+           }
+            for (j > 0; j <= 10; j++) {
+        document.write("*");
+    }
+  document.write("<br>")
+}     
+
+
+       </script>
+  </head>
+    <body>
+      
+    </body>
+  
+ </html>  
