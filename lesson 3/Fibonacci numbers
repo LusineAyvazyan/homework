@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>xndir6</title>
+<title> Fibonacci number</title>
 	<script type="text/javascript">
 		let num = +prompt("insert number");
 		let a = 0;
@@ -13,9 +10,3 @@
 		        document.write(c + "<br>");
 		 	}
 	</script>
-
-</head>
-<body>
-
-</body>
-</html>
