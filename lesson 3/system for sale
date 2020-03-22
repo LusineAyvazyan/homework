@@ -1,48 +1,40 @@
-<html>
-  <head>
-    <title>xndir8</title>
+<title>sale system</title>
     <script>
          let item = prompt ("insert item name - shoes (30,000AMD), shirt (60,000AMD), jacket (120,000AMD)");
          let shoes = 30000;
          let shirt = 60000;
          let jacket = 120000;
-         if (item != "shoes" && item != "shirt" && item != "jacket") {
-            alert ("invalid input");
-          } else {
+     if (item != "shoes" && item != "shirt" && item != "jacket") {
+       alert ("invalid input");
+        } else {
             let metod = prompt ("insert payment metod - cash or transfer");
             let cash;
             let transfer;
             let money;
-               if (metod === "cash" && item === "shoes") {
-                 alert (`you have a discount ${(shoes*10)/100} AMD`);
-                 alert (`your transaction amount is ${(shoes-(shoes*10)/100)} AMD`);
+          if (metod === "cash" && item === "shoes") {
+             alert (`you have a discount ${(shoes*10)/100} AMD`);
+             alert (`your transaction amount is ${(shoes-(shoes*10)/100)} AMD`);
                 } else if (metod === "transfer" && item === "shoes") {
-                  alert (`you have a discount ${(shoes*10)/100} AMD`);
-                  prompt ("insert account");
-                  alert (`your transaction amount is ${(shoes-(shoes*10)/100)}AMD`);
-                 } else if (metod === "cash" && item === "shirt") {
-                   prompt (`insert transaction amount ${shirt}AMD`);
-                 } else if (metod === "transfer" && item === "shirt") {
-                   alert (`you have a discount ${(shirt*5)/100} AMD`);
+                   alert (`you have a discount ${(shoes*10)/100} AMD`);
                    prompt ("insert account");
-                   alert (`your transaction amount is ${(shirt-(shirt*5)/100)}AMD`);
-                 } else if (metod === "cash" && item === "jacket") {
-                  alert (`you have a discount ${(jacket*30)/100} AMD`);
-                  alert (`your transaction amount is ${(jacket-(jacket*30)/100)} AMD`);
-                 } else if (metod === "transfer" && item === "jacket") {
-                  alert (`you have a discount ${(jacket*30)/100} AMD`);
-                  prompt ("insert account");
-                  alert (`your transaction amount is ${(jacket-(jacket*30)/100)} AMD`);
-                 } else {
+                   alert (`your transaction amount is ${(shoes-(shoes*10)/100)}AMD`);
+                     } else if (metod === "cash" && item === "shirt") {
+                       prompt (`insert transaction amount ${shirt}AMD`);
+                         } else if (metod === "transfer" && item === "shirt") {
+                         alert (`you have a discount ${(shirt*5)/100} AMD`);
+                         prompt ("insert account");
+                         alert (`your transaction amount is ${(shirt-(shirt*5)/100)}AMD`);
+                           } else if (metod === "cash" && item === "jacket") {
+                           alert (`you have a discount ${(jacket*30)/100} AMD`);
+                           alert (`your transaction amount is ${(jacket-(jacket*30)/100)} AMD`);
+                             } else if (metod === "transfer" && item === "jacket") {
+                               alert (`you have a discount ${(jacket*30)/100} AMD`);
+                               prompt ("insert account");
+                               alert (`your transaction amount is ${(jacket-(jacket*30)/100)} AMD`);
+                         } else {
                    alert ("invalid input");
                  }
         
       }
         
        </script>
-  </head>
-    <body>
-      
-    </body>
-  
- </html>  
