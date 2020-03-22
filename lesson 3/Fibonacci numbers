@@ -6,9 +6,9 @@
 		let num = +prompt("insert number");
 		let a = 0;
 		let b = 1;
-		 for (let i = num; i >= (a + b); i--) {
+		 for (let i = num; i > a ; i--) {  // ete aranc trvac tvi apa i>a+b
 		        c = a + b;	 	
-		 	 	a = b;
+		 	a = b;
 		        b = c;
 		        document.write(c + "<br>");
 		 	}
