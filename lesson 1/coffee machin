@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coffee Machine</title>
+	<script type="text/javascript">
+		let coin = prompt("Please insert money (10, 50, 100, 500, 1000 AMD)");
+if (coin != 10  && coin != 50  && coin != 100  && coin != 500  && coin != 1000 ) {
+    alert("Invalid input");
+ } else {
+    let x = 0;
+    let tea = 50; 
+    let coffee = 100;
+    let jucie = 500;
+    if (coin < 50) {
+    	alert("Please add money")
+    } else {
+      let drink = prompt("Please choose one of the drinks -> tea (50 AMD), coffee(100 AMD), juice (500 AMD)");
+    if (drink === "tea" || drink === "coffee" || drink === "jucie") {
+     if (drink === "tea") {
+         x = tea;
+     } else if (drink === "coffee") {
+         x = coffee;
+     } else if ( drink === "jucie") {
+         x = jucie;
+     }  
+     if (coin < x) {
+         alert("Please add money");
+     } else { 
+         let sugar = prompt("Please choose amount of sugar from 0 to 5");
+        if (sugar >= 0 && sugar <= 5) {
+         alert ("Please take your drink");
+         alert (`Please take your cash ${coin-x}`);
+     } else { alert("Invalid input") }
+    }
+}
+ else {
+        alert("Invalid input");
+    }
+}
+}
+
+	</script>
+</head>
+<body>
+     
+</body>
+</html>
