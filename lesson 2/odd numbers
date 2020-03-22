@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>oddNumber</title>
+    <script>
+      let num = prompt ("insert number");
+      let sum = 1;
+      while (sum <= num) {
+        document.write(sum + "<br>");
+        sum += 2;
+        sum <= num
+        } 
+    
+       </script>
+  </head>
+    <body>
+      
+    </body>
+  
+ </html> 
