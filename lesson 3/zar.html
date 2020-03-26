@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zar</title>
+	<script type="text/javascript">
+		const maxDropCount = 1200;
+        const num = 6;
+        let exactMatchCount = 0;
+        let totalNumber = 0;
+        while (exactMatchCount < maxDropCount) {
+          let tempNumber = Math.floor(Math.random() * 6) + 1;
+         if (tempNumber === num) {
+           exactMatchCount++;
+        }
+          totalNumber++;
+         }
+          console.log(totalNumber/exactMatchCount);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
