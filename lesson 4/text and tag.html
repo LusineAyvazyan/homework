@@ -3,13 +3,12 @@
 <head>
 	<title>function 3</title>
 	<script type="text/javascript">
-           function text(word, html) {
-              return `<${html}>${word}</${html}>`;
+           function text(word, tag) {
+              return `<${tag}>${word}</${tag}>`;
             }
              let Word = prompt("insert word");
              let Tag = prompt("insert tag");
-             alert(text(Word, Tag))
-
+              document.write(text(Word, Tag));
 	</script>
 </head>
 <body>
