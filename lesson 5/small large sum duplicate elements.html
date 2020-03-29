@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function myArray() {
+		  const arraySize = +prompt ("insert array length");
+		  let arrayElement = [];
+		for (let i = 0; i < arraySize; i++) {
+			arrayElement[i] = +prompt ("insert array elements");
+		}
+		  return arrayElement;
+		} 
+  //1st task		
+		 let array = myArray();
+		 let smallest = array[0];
+		  for (let j = 0; j < array.length; j++) {
+		   	if (smallest > array[j]) {
+		   		smallest = array[j];
+		   	}
+		  }
+		  alert(smallest);
+  //2nd task
+		  let largest = 0;
+          for (let k = 0; k < array.length; k++) {
+           	 if (largest < array[k]) {
+           	 	largest = array[k];
+           	 }
+           	}
+		  alert(largest);
+  //3rd task
+          for (let x = 0; x < array.length; x++) {
+          	for (let y = x + 1; y < array.length; y++) {
+          	   if (array[x] === array[y]) {
+          	console.log(array[x]);
+          	}
+          }
+      }
+  //4th task 
+         let arraySum = 0;
+          for (let x = 0; x < array.length; x++) {
+          	arraySum += array[x];
+          }
+           alert (arraySum);
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>>
