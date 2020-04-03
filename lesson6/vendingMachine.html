@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		let vendingMachine = {
+	            goods: [
+			 {
+               name: "water",
+               price: 120,
+               code: "A0",
+               quantity: 10,
+			 },
+			 {
+               name: "cola",
+               price: 200,
+               code: "A1",
+               quantity: 7,
+			 },
+             {
+               name: "coffee",
+               price: 100,
+               code: "A2",
+               quantity: 3,
+			 },
+			 {
+               name: "snickers",
+               price: 250,
+               code: "B0",
+               quantity: 0,
+			 },
+			 {
+               name: "chips",
+               price: 150,
+               code: "B1",
+               quantity: 6,
+			 }, 
+			 {
+               name: "muffin",
+               price: 80,
+               code: "B2",
+               quantity: 4,
+			 },
+
+		]
+	};
+	  //for (let i = 0; i > vendingMachine.goods.quantity; i++) {
+	   let actionType = +prompt ("For buying enter 1 or enter 2 for addition ");
+if (actionType === 1) {
+      let productType = prompt(`Please enter goods code ${getProductList(vendingMachine)}`);
+      let money = +prompt("Please, enter money");
+      let selectedProduct;
+      for (let i = 0; i < vendingMachine.goods.length; i++) {
+         if (vendingMachine.goods[i].code === productType) {
+         	selectedProduct = vendingMachine.goods[i];
+         	break;
+         }     	
+      }
+        if (selectedProduct.quantity <= 0) {
+       	 alert (`Sorry, but the ${selectedProduct.name} is over, please choose another product`);
+       	 prompt (`Please enter goods code ${getProductList(vendingMachine)}`);
+       } 
+         else if (selectedProduct.price > money) { 
+         	alert ("The amount you entered is not enougt for the product you selected, Please add money");
+         } else {
+       	 alert (`Please take your ${selectedProduct.name} and your cash ${money - selectedProduct.price} AMD`)
+       };
+    } 
+else if (actionType === 2) { 
+       	let productNameAdded = prompt (`Please enter name of product which you want to add ${getProductList(vendingMachine)}`);
+       	let addedQuantity = +prompt ("Please enter product quantity which you want to add");
+       	let newQuantity;
+       	 for (i = 0; i < vendingMachine.goods.length; i++) {
+       	 	if (vendingMachine.goods[i].name === productNameAdded) {
+       	 		newQuantity = vendingMachine.goods[i].quantity + addedQuantity;
+       	 		break;
+       	 	}
+       	 }  
+       	 alert (`You added the ${productNameAdded} by ${addedQuantity} piece, now quantity is ${newQuantity} `)
+       }
+else {
+       	 alert ("You enter wrong code")
+       };  
+
+       function getProductList (vendingMachine) {
+     	 let alertString = '';
+             for (let i=0; i< vendingMachine.goods.length; i++) {
+        alertString += vendingMachine.goods[i].code;
+        alertString += ' ' + vendingMachine.goods[i].name + ' ';
+        alertString += ' ' + vendingMachine.goods[i].price + "AMD" + ' ';
+        
+    }
+    return alertString;
+};
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
