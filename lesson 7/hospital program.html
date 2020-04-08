@@ -1,0 +1,77 @@
+<html>
+    <script>
+	 const user = [ 
+		{ mail: "lusine.khalatyan@outlook.com", pass: 1111, name: "Lusine", surname: "Ayvazyan", },
+		{ mail: "annapoghosyan97@gmail.com", pass: 3333, name: "Anna", surname: "Poghosyan", },
+		{ mail: "arayik.yervandyan@gmail.com", pass: 2222, name: "Arayik", surname: "Yervandyan", },
+			
+	  ];
+	 const patientHistory = [
+        {fullName: "Mary Harutyunyan", age: 21, profile: ["pregnant", "pressure"],},
+        {fullName: "Hayk Gevorgyan", age: 64, profile: ["diabet", "allergic"],},
+        {fullName: "Ani Manukyan", age: 35, profile: ["cholesterol", "neurosis"],},
+      ];
+     const illness = [
+        { name: "flu", symptoms: ["cough", "fever"], treatment: ["ibuprofen", "seawater nasal sprey"],},
+        { name: "migraine", symptoms: ["nausea", "headache", "faceache",], treatment: ["paracetamol", "lying in a darkened room",],},
+        { name: "allergies", symptoms: ["blocked nose", "sneezing and an itchy",], treatment: ["zyrtec", "wetting",],},	
+      ];
+
+    let logIn = prompt ("Enter your E-mail");
+	let password = +prompt ("Enter password");
+    let welcome;
+    let patient;
+    let patientProfile;
+    let findSymptoms;
+    let findHealing;
+    let list = " ";
+
+function autorization (user) {
+    for (let i = 0; i < user.length; i++) {
+        if (logIn === user[i].mail && password === user[i].pass) {
+            welcome = document.write(`Welcome, you enter as ${user[i].name} ${user[i].surname}`)
+            patient = prompt ("Enter patient name and surname")
+        } 
+      } 
+      return patient; 
+    };
+    autorization (user);
+
+function  patientInfo (patient) {
+    for (let i = 0; i < patientHistory.length; i++) {
+        if (patient === patientHistory[i].fullName) {
+            patientProfile = document.write (`<br> Your patient - ${patientHistory[i].fullName}
+             ${patientHistory[i].age} years old and had ${patientHistory[i].profile}`);
+            findSymptoms = prompt (`Please choose your simptoms from list ${symptomList(illness)}`);
+        }
+    }
+    return findSymptoms;
+}
+  patientInfo (patient);
+
+function symptomList (illness) {
+    for (let i = 0; i < illness.length; i++) {
+         		list += illness[i].symptoms + ",";
+         	}
+         	return list;
+         };
+
+  symptomList (illness);
+
+// es verjin masy chi ashxatum chem karoxanum gtnel inchi
+function healing (illness) {
+    for (let i = 0; i < illness.length; i++) {
+        if (findSymptoms === illness[i].symptoms) {
+            findHealing = document.write(`Your illness is ${illness[i].name} and your treatment will be ${illness[i].treatment}`)
+        }
+    }
+      return findHealing;
+}
+   healing (illness);
+   
+
+
+
+    
+    </script>
+</html>
