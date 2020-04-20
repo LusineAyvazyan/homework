@@ -1,1 +1,40 @@
-
+<html>
+    <head>
+        <body>
+            <div class="cars">
+                <form action="https://www.mercedes-benz.com/en/design/">
+                    <button class="Mersedes"> MERCEDES BENZ</button>
+                </form>
+                <form action="https://www.bmw.com/en/bmw-models.html">
+                    <button class="Bmw">BMW</button>
+                </form>
+                <form action="https://www.audi.com/en/experience-audi/models-and-technology/audi-exclusive.html">
+                    <button class="AUDI">AUDI</button>
+                </form>
+                <form action="https://www.lexus.com/models/UX-hybrid">
+                    <button class="Lexus">LEXUS</button>
+                </form>
+                <br>
+                <input type="text" id="car" placeholder="Car Model">
+                <br>
+                <input type="text" id="year" placeholder="Car Year">
+                <br>
+                <select class="Owner">
+                    <option value="owner">Choose Owner</option>
+                    <option value="0">Armen</option>
+                    <option value="1">Narek</option>
+                    <option value="2">Hayk</option>
+                </select>
+                <br>
+                <select class="Service">
+                    <option value="service">Choose Service</option>
+                    <option value="0">Mec Aniv</option>
+                    <option value="1">Poqr Aniv</option>
+                </select>
+                <br>
+                <button class="add">ADD</button>
+            </div>
+            <script src="script.js"></script>
+        </body>
+    </head>
+</html>
