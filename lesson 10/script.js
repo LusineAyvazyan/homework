@@ -51,8 +51,8 @@ const service = [
 
 // Գտնել քանի մեքենա է սպասարկվում ամեն սերվիսում
 
-const carsInService = cars.filter ((item) => {
-  const serviceNameNew = service.filter ((element) => {
+const carsInService = cars.map ((item) => {
+  const serviceNameNew = service.map ((element) => {
     if (item.service === element.index) {
         item.service = element.serviceName;
         }
@@ -63,8 +63,8 @@ console.log(carsInService);
 
 // Գտնել Նարեկի բոլոր մեքենաները
 
-const narekCars = cars.filter ((item) => {
-    const newOwner = owner.filter ((element) => {
+const narekCars = cars.map ((item) => {
+    const newOwner = owner.map ((element) => {
         if (item.owner === element.index) {
             item.owner = element.name;
             }
@@ -110,4 +110,3 @@ carAdd.addEventListener ('click', function () {
   }); 
   console.log(newCar)
 });
-
