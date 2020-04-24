@@ -1,0 +1,9 @@
+<html>
+    <head>
+        <body>
+            <button class="button" id="teaButton"> TEA 100Amd</button>
+            <button class="button" id="coffeeButton"> COFFEE 500Amd</button>
+        </body>
+        <script src="scriptCM.js"></script>
+    </head>
+</html>
