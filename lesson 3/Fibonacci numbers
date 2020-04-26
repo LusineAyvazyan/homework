@@ -3,7 +3,8 @@
 		let num = +prompt("insert number");
 		let a = 0;
 		let b = 1;
-		 for (let i = num; i > a ; i--) {  // ete aranc trvac tvi apa i>a+b
+		let c = 0;
+		 while(c < num) {
 		        c = a + b;	 	
 		 	a = b;
 		        b = c;
